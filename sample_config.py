@@ -32,8 +32,6 @@ class Config(object):
     # Give yes or no
     SAVE_USER = os.environ.get("SAVE_USER", "no").lower()
 
-    ADMIN = int(os.environ.get("ADMIN", ""))
-
     # Go to https://dashboard.heroku.com/account, scroll down and press Reveal API
     # To check dyno status
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "")
