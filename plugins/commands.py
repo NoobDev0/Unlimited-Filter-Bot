@@ -211,7 +211,8 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    await message.reply_text(
+    if 
+        await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
@@ -254,11 +255,8 @@ async def help(client, message):
             ]
         ),
         reply_to_message_id=message.message_id
-        )
-     else:
-         break
-
-
+        )   
+         
 
 @trojanz.on_message(filters.command('about') & filters.private)
 async def about(client, message):
@@ -280,5 +278,5 @@ async def about(client, message):
         ),
         reply_to_message_id=message.message_id
         )
-     else:
-         break
+     
+   
