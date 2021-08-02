@@ -50,10 +50,6 @@
             "description": "To check dyno status. Go to https://dashboard.heroku.com/account, scroll down and press Reveal API",
             "value": "None",
             "required": false
-        },
-        "ADMINS": {
-            "description": "Admin id",
-            "value": ""
         }
     },
     "buildpacks": [
