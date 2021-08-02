@@ -211,7 +211,7 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    if update.from_user.id in ADMIN
+    if update.from_user.id in ADMIN:
         await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
