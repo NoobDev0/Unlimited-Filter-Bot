@@ -211,7 +211,7 @@ async def bot_status(client,message):
 
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    if 
+    if update.from_user.id in ADMIN
         await message.reply_text(
         text=Script.START_MSG.format(message.from_user.mention),
         disable_web_page_preview=True,
@@ -223,17 +223,17 @@ async def start(client, message):
             ]
         ),
         reply_to_message_id=message.message_id
-    )
-    if Config.SAVE_USER == "yes":
-        try:
-            await add_user(
-                str(message.from_user.id),
-                str(message.from_user.username),
-                str(message.from_user.first_name + " " + (message.from_user.last_name or "")),
-                str(message.from_user.dc_id)
-            )
-        except:
-            pass
+        )
+        if Config.SAVE_USER == "yes":
+            try:
+                await add_user(
+                    str(message.from_user.id),
+                    str(message.from_user.username),
+                    str(message.from_user.first_name + " " + (message.from_user.last_name or "")),
+                    str(message.from_user.dc_id)
+                )
+            except:
+                pass
 
 
 @trojanz.on_message(filters.command('help') & filters.private)
