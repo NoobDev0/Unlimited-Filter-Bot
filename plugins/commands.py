@@ -255,8 +255,8 @@ async def help(client, message):
         ),
         reply_to_message_id=message.message_id
         )
-    else:
-        break
+     else:
+         break
 
 
 
@@ -280,5 +280,5 @@ async def about(client, message):
         ),
         reply_to_message_id=message.message_id
         )
-    else:
-        break
+     else:
+         break
