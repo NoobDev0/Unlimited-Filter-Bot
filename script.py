@@ -6,7 +6,7 @@ I'm an advanced filter bot with many capabilities!
 There is no practical limits for my filtering capacity :)
 
 See <i>/help</i> for commands and more details.</b>
-@aska2zmovies 
+@CinemaHaunter 
 """
 
 
@@ -49,13 +49,13 @@ See <i>/help</i> for commands and more details.</b>
 <code>/info userid</code>  -  Shows User Information. Use <code>/info</code> as reply to some message for their details!
 
 
-<b>© @aska2zmovies</b>
+<b>© @CinemaHaunter</b>
 """
 
 
     ABOUT_MSG = """⭕️<b>My Name : Unlimited Filter Bot</b>
 
-⭕️<b>Creater :</b> @TroJanzHEX    
+⭕️<b>Creater :</b> @JonasKhanwaldTG    
 
 ⭕️<b>Language :</b> <code>Python3</code>
 
